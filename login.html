@@ -1,0 +1,34 @@
+<html>
+    <head>
+            <title>Student Registration || Login</title>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+<body>
+            <h2 class="text-info">Login Form Validation</h2>
+
+            <div class="container">
+            <div class="col-6">
+                <form onsubmit="return verify()" action="index.html" method="post">
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" id="password">
+                        <p class="error"></p>
+                    </div>
+                    
+                    <a href="register.html" class="btn btn-info">Registration</a>
+                    <input type="submit"class="btn btn-info" onclick="verify()" value="Login">
+                </form>
+                </div>
+            </div>
+
+
+
+    <script src="verify.js"></script>
+</body>
+</html>

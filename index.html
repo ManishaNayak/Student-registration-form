@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>
+        Student FORM
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+                <table class="list" id="studentList">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Student name</th>
+                                <th>email</th>
+                                <th>class</th>
+                                <th>Enrollment year</th>
+                                <th>city</th>
+                                <th>country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody> 
+                </table>
+<br><br>
+    <table>
+        <tr>       
+            <td>
+                <div class="container">
+                <div class="col-6">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student ID</label>
+                        <input type="text" name="Student ID" id="studentID">
+                    </div>
+                    <div>
+                        <label>Student name</label>
+                        <label class="validation-error hide" id="studentnameValidationError">This field is required.</label>
+                        <input type="text" name="studentname" id="studentname">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Class</label>
+                        <input type="text" name="class" id="class">
+                    </div>
+                    <div>
+                        <label>Enrollment Year</label>
+                        <input type="text" name="year" id="year">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="save">
+                        <input type="submit" value="cancel">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </td>
+            
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
